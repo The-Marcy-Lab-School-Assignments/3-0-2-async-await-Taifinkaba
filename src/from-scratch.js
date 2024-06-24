@@ -20,6 +20,7 @@ export const fetchHandler = async (url, options = {}) => {
         return [responseData, null]; 
 
     } catch (error) {
+        /** FEEDBACK: Just warn the error! No message, no extra text, and you are good to go! */
         console.warn('YOUR TESTING ERROR:', error.message);
 
         return [null, error]; 
